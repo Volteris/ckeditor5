@@ -25,15 +25,15 @@ export default class HtmlEmbedEditing extends Plugin {
 	/**
 	 * @inheritDoc
 	 */
-	static get pluginName() {
-		return 'HtmlEmbedEditing';
+	static get requires() {
+		return [ 'Widget' ];
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	static get requires() {
-		return [ 'Widget' ];
+	static get pluginName() {
+		return 'HtmlEmbedEditing';
 	}
 
 	/**

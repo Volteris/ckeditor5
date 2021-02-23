@@ -43,6 +43,10 @@ describe( 'HtmlEmbedEditing', () => {
 			} );
 	} );
 
+	it( 'should require Widget as a soft-requirement', () => {
+		expect( HtmlEmbedEditing.requires ).to.deep.equal( [ 'Widget' ] );
+	} );
+
 	it( 'should have pluginName', () => {
 		expect( HtmlEmbedEditing.pluginName ).to.equal( 'HtmlEmbedEditing' );
 	} );
