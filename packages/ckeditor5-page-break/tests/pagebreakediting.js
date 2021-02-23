@@ -41,6 +41,10 @@ describe( 'PageBreakEditing', () => {
 			} );
 	} );
 
+	it( 'should require Widget as a soft-requirement', () => {
+		expect( PageBreakEditing.requires ).to.deep.equal( [ 'Widget' ] );
+	} );
+
 	it( 'should have pluginName', () => {
 		expect( PageBreakEditing.pluginName ).to.equal( 'PageBreakEditing' );
 	} );
